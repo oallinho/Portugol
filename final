@@ -1,0 +1,98 @@
+programa {
+  funcao inicio() {
+    inteiro op, op2, contador, resultado
+    real n1, n2
+    cadeia parar
+
+    escreva("--Menu-- \n")
+    escreva("1 - Tabuada x 10 \n")
+    escreva("2 - Idade \n")
+    escreva("3 - Números pares até 100 \n")
+    escreva("4 - Números ímpares até 100 \n")
+    escreva("5 - Calculadora \n \n")
+
+    escreva("Digite a opção desejada: ")
+    leia(op)
+
+    limpa()
+
+    escolha (op) {
+      caso 1:
+        escreva("Digite um número para visualizar a tabuada: ")
+        leia(n1)
+        limpa()
+
+        para(contador = 1 ; contador <= 10 ; contador++){
+          resultado = n1 * contador
+          escreva("Cálculo " + n1 + " X " + contador + " = " + resultado + "\n")
+        } limpa()
+
+       caso 2: 
+       escreva("Digite a sua idade: ")
+       leia(n1)
+        limpa()
+
+       se(n1 >= 18){
+        escreva("Você é maior de idade.")
+       } senao{
+        escreva("Você é menor de idade.")
+       }
+       pare
+
+       caso 3:
+
+        para (contador = 1 ; contador <= 100 ; contador++)
+        se(contador %2 == 0)
+        escreva(contador , "\n")
+
+        pare
+
+        caso 4:
+
+        para (contador = 1 ; contador <= 100 ; contador++)
+        se(contador %2 != 0)
+        escreva(contador , "\n")
+
+        pare
+
+        caso 5:
+          escreva("Digite o primeiro número: ")
+          leia(n1)
+          escreva("Digite o segundo número: ")
+          leia(n2)
+          limpa()
+
+          escreva("Qual operação gostaria de realizar? \n")
+          escreva("1 - Soma \n")
+          escreva("2 - Subtração \n")
+          escreva("3 - Divisão \n")
+          escreva("4 - Multiplicação \n \n")
+
+          escreva("Acessar: ")
+          leia(op2)
+          limpa()
+
+          escolha (op2){
+            caso 1:
+              escreva("A soma dos dígitos resulta em: " , n1 + n2)
+              pare
+            caso 2:
+              escreva("A subtração dos dígitos resulta em: " , n1 - n2)
+              pare
+            caso 3:
+              escreva("A divisão dos dígitos resulta em: " , n1 / n2)
+              pare
+            caso 4:
+              escreva("A multiplicação dos dígitos resulta em: " , n1 * n2)
+              pare
+          
+
+      caso contrario:
+        escreva("Opção inválida.")
+
+    
+  }
+  funcao inicio2(){
+    inicio()
+  }
+}
