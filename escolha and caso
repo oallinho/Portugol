@@ -1,20 +1,57 @@
 programa {
   funcao inicio() {
-    inteiro nr
+    inteiro op, op2, n1, n2, n3, idade
+
+    escreva("--Menu-- \n")
+    escreva("1 para realizar cálculo \n")
+    escreva("2 para verificar idade \n \n")
+  
+    escreva("Digite a opção: ")
+    leia(op)
+
+    escolha(op){
+      caso 1:
+      escreva("Digite o primeiro número: ")
+      leia(n1)
+      escreva("Digite o segundo número: ")
+      leia(n2)
+
+      escreva("1 para somar \n")
+      escreva("2 para subtrair \n")
+      escreva("Qual operação gostaria de realizar? ")
+      leia(op2)
+
+    escolha(op2){
+      caso 1:
+        escreva("A soma dos dígitos é: ", n1 + n2)
+        pare
+      
+      caso 2:
+        escreva("A subtração dos dígitos é: ", n1 - n2)
+        pare
+
+      caso contrario:
+        escreva("Opção inválida")
+        pare
+    }
+    pare
+
+      caso 2:
+        escreva("Digite a sua idade: ")
+        leia(idade)
+
+        se(idade >= 18){
+          escreva("Você é maior de idade.")
+        }senao{
+          escreva("Você é menor de idade")
+        }
+        pare
+        
+      caso contrario:
+        escreva("Opção inválida.")
+    }
+
+
     
-    escreva("Digite o dia da semana (1 = segunda e 2 = terça): ")
-    leia(nr)
-
-    escolha(nr){
-    caso 1:
-      escreva("Hoje é segunda.")
-      pare
-    caso 2:
-      escreva("Hoje é terça.")
-      pare
-
-    caso contrario:
-      escreva("Opção não disponível.")
-    }  
   }
 }
