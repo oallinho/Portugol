@@ -8,18 +8,23 @@ programa {
   
     escreva("Digite a opção: ")
     leia(op)
+limpa()
 
     escolha(op){
       caso 1:
       escreva("Digite o primeiro número: ")
       leia(n1)
+      limpa()
+
       escreva("Digite o segundo número: ")
       leia(n2)
+      limpa()
 
       escreva("1 para somar \n")
       escreva("2 para subtrair \n")
       escreva("Qual operação gostaria de realizar? ")
       leia(op2)
+      limpa()
 
     escolha(op2){
       caso 1:
@@ -33,12 +38,14 @@ programa {
       caso contrario:
         escreva("Opção inválida")
         pare
+        limpa()
     }
     pare
 
       caso 2:
         escreva("Digite a sua idade: ")
         leia(idade)
+        limpa()
 
         se(idade >= 18){
           escreva("Você é maior de idade.")
@@ -55,3 +62,4 @@ programa {
     
   }
 }
+
