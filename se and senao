@@ -8,9 +8,12 @@ programa {
     escreva("Olá, digite a sua idade: ")
     leia(idade)
 
-    se(idade >= 18){
-    escreva("Olá, " , nome , "! Você é maior de idade.")
-  }senao{
+    se(idade <= 18){
     escreva("Olá, " , nome , "! Você é menor de idade.")
+  }senao se (idade >= 19 e idade <= 30){
+    escreva("entre 19 e 30")
+  }
+  senao{
+    escreva("Olá, " , nome , "! Você é maior de idade.")
   }
 }
