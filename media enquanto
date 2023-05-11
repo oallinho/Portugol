@@ -1,0 +1,18 @@
+programa {
+  funcao inicio() {
+    inteiro contador = 1, nr, calculo = 0
+    real media
+
+    enquanto(contador <= 10){
+      limpa()
+      escreva("Digite o ", contador, "° número: ")
+      leia(nr)
+
+      calculo = calculo + nr
+      contador = contador + 1
+    }
+    
+    media = calculo / 10
+    escreva("A média dos números digitados é: " + media)
+  }
+}
