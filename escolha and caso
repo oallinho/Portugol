@@ -1,0 +1,20 @@
+programa {
+  funcao inicio() {
+    inteiro nr
+    
+    escreva("Digite o dia da semana (1 = segunda e 2 = terça): ")
+    leia(nr)
+
+    escolha(nr){
+    caso 1:
+      escreva("Hoje é segunda.")
+      pare
+    caso 2:
+      escreva("Hoje é terça.")
+      pare
+
+    caso contrario:
+      escreva("Opção não disponível.")
+    }  
+  }
+}
